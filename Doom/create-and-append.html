@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create &  Append Element Ex</title>
+</head>
+<body>
+    
+    <div id="container">
+        <h2>Original Heading</h2>
+    </div>
+
+    <script>
+        const container = document.getElementById("container");
+
+        const newParagraph = document.createElement('p');
+
+        newParagraph.textContent = "This is a new Paragraph."
+
+        container.appendChild(newParagraph);
+    </script>
+</body>
+</html>
